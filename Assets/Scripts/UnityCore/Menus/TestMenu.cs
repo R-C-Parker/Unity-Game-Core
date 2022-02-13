@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TestMenu : MonoBehaviour
+namespace UnityCore
 {
-    // Start is called before the first frame update
-    void Start()
+    namespace Menu
     {
-        
-    }
+        public class TestMenu : MonoBehaviour
+        {
+            public PageController pageController;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+#if UNITY_EDITOR
+
+            private void Update()
+            {
+                if (Input.GetKeyUp(KeyCode.F))
+                {
+                    pageController.TurnPageOn(PageType.Loading);
+                }
+                if (Input.GetKeyUp(KeyCode.G))
+                {
+                    pageController.TurnPageOff(PageType.Loading);
+                }
+            }
+
+#endif
+        }
     }
 }
