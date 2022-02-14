@@ -42,7 +42,7 @@ namespace UnityCore
 
             private IEnumerator WaitForPageExit(Page _on, Page _off)
             {
-                return null;
+                yield return null;
             }
 
             private void RegisterAllPages()
