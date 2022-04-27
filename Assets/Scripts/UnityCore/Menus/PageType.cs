@@ -1,12 +1,9 @@
-namespace UnityCore
+namespace UnityCore.Menu
 {
-    namespace Menu
+    public enum PageType
     {
-        public enum PageType
-        {
-            None,
-            Loading,
-            Menu
-        }
+        None,
+        Loading,
+        Menu
     }
 }
