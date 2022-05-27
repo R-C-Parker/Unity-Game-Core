@@ -8,6 +8,8 @@ namespace UnityCore.Data
         private static readonly string DATA_HIGHSCORE = "highscore";
         private static readonly int DEFAULT_INT = 0;
 
+        public static DataController instance;
+
         #region Properties
 
         public int Score
@@ -40,6 +42,18 @@ namespace UnityCore.Data
         }
 
         #endregion Properties
+
+        #region Unity Functions
+
+        private void Awake()
+        {
+            if (!instance)
+            {
+                instance = this;
+            }
+        }
+
+        #endregion Unity Functions
 
         #region Private Functions
 
