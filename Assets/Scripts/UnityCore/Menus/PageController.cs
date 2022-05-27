@@ -139,7 +139,7 @@ namespace UnityCore.Menu
         private void LogWarning(string _msg)
         {
             if (!debug) return;
-            Debug.Log("[PageController]: " + _msg);
+            Debug.LogWarning("[PageController]: " + _msg);
         }
 
         #endregion Private Functions
