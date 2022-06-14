@@ -34,7 +34,7 @@ namespace UnityCore.Audio
 
         private void Awake()
         {
-            /**Singleton instance can be removed if project requires multiple audio controllers*/
+            /**Singleton instance can be removed if project requires multiple audio controllers */
             if (!instance)
             {
                 Configure();
