@@ -28,7 +28,10 @@ namespace UnityCore.Audio
             public AudioObject[] audio;
         }
 
+        private class AudioJob
+        {
 
+        }
 
         #region Unity Functions
 
