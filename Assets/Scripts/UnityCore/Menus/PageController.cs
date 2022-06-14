@@ -142,6 +142,7 @@ namespace UnityCore.Menu
             Debug.LogWarning("[PageController]: " + _msg);
         }
 
+
         #endregion Private Functions
     }
 }

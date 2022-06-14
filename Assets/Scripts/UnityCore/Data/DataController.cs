@@ -10,6 +10,7 @@ namespace UnityCore.Data
 
         public static DataController instance;
 
+
         #region Properties
 
         public int Score

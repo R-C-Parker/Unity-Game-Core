@@ -18,6 +18,7 @@ namespace UnityCore.Menu
 
         #region Unity Functions
 
+
         private void OnEnable()
         {
             CheckAnimatorIntegrity();
